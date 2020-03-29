@@ -10,6 +10,9 @@
     <properties>
        <maven.compiler.source>1.8</maven.compiler.source>
        <maven.compiler.target>1.8</maven.compiler.target>
+       <sonar.coverage.jacoco.xmlReportPaths>
+          ${SRCROOT}/target/site/jacoco/jacoco.xml
+       </sonar.coverage.jacoco.xmlReportPaths>
     </properties>    
 
     <modules>
@@ -19,4 +22,49 @@
         <module>business-service</module>
         <module>frontend</module>
     </modules>
+
+    <build>
+       <pluginManagement>
+          <plugins>
+             <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.8.5</version>
+                <executions>
+                   <execution>
+                      <id>prepare-agent</id>
+                      <goals>
+                         <goal>prepare-agent</goal>
+                      </goals>   
+                   </execution>
+                   <execution>
+                      <id>default-instrument</id>
+                      <goals>
+                         <goal>instrument</goal>
+                      </goals>   
+                   </execution>
+                   <execution>
+                      <id>default-restore-instrumented-classes</id>
+                      <goals>
+                         <goal>restore-instrumented-classes</goal>
+                      </goals>   
+                   </execution>
+                   <execution>
+                      <id>generate-report</id>
+                      <goals>
+                         <goal>report</goal>
+                      </goals>   
+                   </execution>
+                   <execution>
+                      <id>report-aggregate</id>
+                      <phase>test</phase>
+                      <goals>
+                         <goal>report-aggregate</goal>
+                      </goals>   
+                   </execution>
+                </executions>
+             </plugin>     
+          </plugins>
+       </pluginManagement>
+    </build>
 </project>

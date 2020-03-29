@@ -5,13 +5,15 @@ SONAR_POSTGRES_PASSWORD='password'
 SONAR_POSTGRES_DATABASE_NAME='sonar_db'
 SONAR_WEB_HOST=192.168.0.101
 
+# Install maven and nginx
+sudo apt install maven
+sudo apt install nginx
+
 sudo apt install openjdk-8-jdk -y
 sudo add-apt-repository ppa:linuxuprising/java
 sudo apt update -y && sudo apt upgrade -y
 sudo apt-get install openjdk-11-jdk -y
 sudo apt-get install oracle-java11-set-default-local
-
-sudo apt install nginx
 
 # Install and start Jenkins
 wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
