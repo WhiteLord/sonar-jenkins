@@ -1,0 +1,33 @@
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+
+
+######################
+# Intellij
+######################
+.idea/**
+*.iml
+*.iws
+*.ipr
+*.ids
+*.orig
+
+
+######################
+# Maven
+######################
+target/
+dist/
+.scannerwork/
+.mvn/
+**/pom.xml.versionsBackup
+
+######################
+# Angular
+######################
+node_modules/
