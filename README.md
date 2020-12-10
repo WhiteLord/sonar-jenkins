@@ -1,4 +1,6 @@
 # Continuous Code Inspection with SonarQube
+![Continuous Code Inspection with SonarQube](https://couponos.me/wp-content/uploads/Continuous-Code-Inspection-with-SonarQube.jpg)
+
 
 ## What is this project?
 This is the repository that contains the 'Continuous Code Inspection with SonarQube' course on Udemy, delivered by me.
