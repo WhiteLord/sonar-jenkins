@@ -1,9 +1,9 @@
 # Continuous Code Inspection with SonarQube
-![Continuous Code Inspection with SonarQube](https://hosting.photobucket.com/images/i/gspasov2/Logo_Docker.png?width=1920&height=1080&fit=bounds)
+![Continuous Code Inspection with SonarQube](https://uc3b079126455471361d537552ce.previews.dropboxusercontent.com/p/thumb/ABCEuMfkVUobfxDb9XOId-N01zRHJ4uQ6Li3eDX1vjfmQ66VgihQz6VvMzOn2PCaZ31AepDI-O_Xf3t5n2BJub3FnY-I6p7U3ntg29F357zhrRpaRpFBS8Yxg4SQ1Z0OWhr8wY_LDCfZQl8gWSBhft-XhVt7c3FB6efe7SAPqVFQQVZvmzD-GAl4wFJIFbhzj0TaXcWayvFMm1IxYN-BNIbON002A3OWt2QTtQLithdoi0dOjLVOAON7QvddSD6AwWUN1YVupqY1VYf_jaR41cPxPa5gKO8m0q0Pfvp8UfehfklrYxCHHTeewcpTr3kZ8rFej31U1eLMfHaEvUixIrxJvj4Pw3uG8sDmgZLFLz_PKQgHu2tKU_Jt1rLRJHBbVl-QgLgj1h_EQD3X7FbYUK7m/p.png?fv_content=true&size_mode=5)
 
 
 ## What is this project?
-This is the repository that contains the [Continuous Code Inspection with SonarQube' course on Udemy](https://www.udemy.com/course/continuous-code-inspection-with-sonarqube/), delivered by me.
+This is the repository that contains the [Continuous Code Inspection with SonarQube course on Udemy](https://www.udemy.com/course/continuous-code-inspection-with-sonarqube/), delivered by me.
 This course will guide you through the process of *installing*, *integrating* and *using* SonarQube with applications that utilize the **Maven** build system.
 As a byproduct, you will also get to know DevOps tools like **Jenkins** and learn how to setup **continuous code inspection** for your codebase.
 
