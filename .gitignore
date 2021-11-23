@@ -36,3 +36,7 @@ node_modules/
 # Custom
 ######################
 docker/
+docker-compose.yml
+frontend/frontend-client/coverage/*
+frontend/frontend-client/node_modules/*
+frontend/frontend-client/dist/*

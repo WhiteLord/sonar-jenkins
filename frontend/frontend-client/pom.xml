@@ -1,81 +1,81 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-   <modelVersion>4.0.0</modelVersion>
-
-   <parent>
-      <groupId>org.example</groupId>
-      <artifactId>Frontend</artifactId>
-      <version>1.0-SNAPSHOT</version>
-   </parent>
-
-   <artifactId>frontend-client</artifactId>
-   <packaging>pom</packaging>
-   <version>1.0-SNAPSHOT</version>
-   <name>Client Frontend Application</name>
-
-   <profiles>
-      <profile>
-         <id>sonar-scan</id>
-         <build>
-            <plugins>
-               <plugin>
-                  <groupId>com.github.eirslett</groupId>
-                  <artifactId>frontend-maven-plugin</artifactId>
-                  <version>1.8.0</version>
-      
-                  <executions>
-                     <execution>
-                        <id>install-node-and-npm</id>
-                        <goals>
-                            <goal>install-node-and-npm</goal>
-                        </goals>
-                        <configuration>
-                            <nodeVersion>v10.16.3</nodeVersion>
-                            <npmVersion>6.14.4</npmVersion>
-                        </configuration>
-                     </execution>
-                     <execution>
-                        <id>npm install</id>
-                        <goals>
-                           <goal>npm</goal>
-                        </goals>
-                        <configuration>
-                           <arguments>install</arguments>
-                        </configuration>
-                     </execution>
-                     <execution>
-                       <id>npm build</id>
-                       <goals>
-                          <goal>npm</goal>
-                       </goals>
-                       <configuration>
-                          <arguments>run build</arguments>
-                       </configuration>
-                          <phase>generate-resources</phase>
-                     </execution>
-                     <execution>
-                        <id>npm coverage</id>
+    <modelVersion>4.0.0</modelVersion>
+ 
+    <parent>
+       <groupId>org.example</groupId>
+       <artifactId>Frontend</artifactId>
+       <version>1.0-SNAPSHOT</version>
+    </parent>
+ 
+    <artifactId>frontend-client</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <name>Client Frontend Application</name>
+ 
+    <profiles>
+       <profile>
+          <id>sonar-scan</id>
+          <build>
+             <plugins>
+                <plugin>
+                   <groupId>com.github.eirslett</groupId>
+                   <artifactId>frontend-maven-plugin</artifactId>
+                   <version>1.8.0</version>
+       
+                   <executions>
+                      <execution>
+                         <id>install-node-and-npm</id>
+                         <goals>
+                             <goal>install-node-and-npm</goal>
+                         </goals>
+                         <configuration>
+                             <nodeVersion>v12.22.7</nodeVersion>
+                             <npmVersion>6.14.15</npmVersion>
+                         </configuration>
+                      </execution>
+                      <execution>
+                         <id>npm install</id>
+                         <goals>
+                            <goal>npm</goal>
+                         </goals>
+                         <configuration>
+                            <arguments>install</arguments>
+                         </configuration>
+                      </execution>
+                      <execution>
+                        <id>npm build</id>
                         <goals>
                            <goal>npm</goal>
                         </goals>
                         <configuration>
-                           <arguments>run test-coverage</arguments>
+                           <arguments>run build</arguments>
                         </configuration>
                            <phase>generate-resources</phase>
                       </execution>
                       <execution>
-                        <id>npm-post-sonar</id>
-                        <goals>
-                           <goal>npm</goal>
-                        </goals>
-                        <configuration>
-                           <arguments>run sonar</arguments>
-                        </configuration>
-                           <phase>generate-resources</phase>
-                      </execution>
-                  </executions>
-               </plugin>
-            </plugins>   
-         </build>
-      </profile>
-   </profiles>
-</project>
+                         <id>npm coverage</id>
+                         <goals>
+                            <goal>npm</goal>
+                         </goals>
+                         <configuration>
+                            <arguments>run test-coverage</arguments>
+                         </configuration>
+                            <phase>generate-resources</phase>
+                       </execution>
+                       <execution>
+                         <id>npm-post-sonar</id>
+                         <goals>
+                            <goal>npm</goal>
+                         </goals>
+                         <configuration>
+                            <arguments>run sonar</arguments>
+                         </configuration>
+                            <phase>generate-resources</phase>
+                       </execution>
+                   </executions>
+                </plugin>
+             </plugins>   
+          </build>
+       </profile>
+    </profiles>
+ </project>
