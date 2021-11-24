@@ -17,3 +17,6 @@ All other branches contain older version of Angular, thus containing dependencie
 
 - Angular test coverage reporst are generated with:
 `mvn clean install -Dsonar-scan from frontend-client folder`
+
+## Can I get the course with a discount?
+Sure you can! Just ping me on [LinkedIn](https://www.linkedin.com/in/georgi-spasov-/)
