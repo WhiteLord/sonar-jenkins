@@ -16,7 +16,7 @@ sudo apt-get install openjdk-11-jdk -y
 sudo apt-get install oracle-java11-set-default-local
 
 # Install and start Jenkins
-wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo apt-key add -
 sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
 sudo apt-get update -y
 sudo apt-get install jenkins -y
